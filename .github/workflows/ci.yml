@@ -24,9 +24,9 @@ jobs:
             .yarn/cache
             .yarn/install-state.gz
             node_modules
-          key: ${{ runner.os }}-node-24.17.0-yarn-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-node-24.11.0-yarn-${{ hashFiles('yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-24.17.0-yarn-
+            ${{ runner.os }}-node-24.11.0-yarn-
       - run: corepack enable
       - run: yarn install --immutable
         if: steps.deps-cache.outputs.cache-hit != 'true'
@@ -48,9 +48,9 @@ jobs:
             .yarn/cache
             .yarn/install-state.gz
             node_modules
-          key: ${{ runner.os }}-node-24.17.0-yarn-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-node-24.11.0-yarn-${{ hashFiles('yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-24.17.0-yarn-
+            ${{ runner.os }}-node-24.11.0-yarn-
       - run: corepack enable
       - run: yarn install --immutable
         if: steps.deps-cache.outputs.cache-hit != 'true'
@@ -73,9 +73,9 @@ jobs:
             .yarn/cache
             .yarn/install-state.gz
             node_modules
-          key: ${{ runner.os }}-node-24.17.0-yarn-${{ hashFiles('yarn.lock') }}
+          key: ${{ runner.os }}-node-24.11.0-yarn-${{ hashFiles('yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-24.17.0-yarn-
+            ${{ runner.os }}-node-24.11.0-yarn-
       - run: corepack enable
       - run: yarn install --immutable
         if: steps.deps-cache.outputs.cache-hit != 'true'
