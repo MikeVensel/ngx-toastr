@@ -17,6 +17,7 @@ module.exports = defineConfig([
     processor: angular.processInlineTemplates,
     rules: {
       '@angular-eslint/component-class-suffix': 'off',
+      '@angular-eslint/prefer-on-push-component-change-detection': 'off',
     },
   },
   {
