@@ -13,6 +13,8 @@
   <br>
 </div>
 
+> This is a fork of [scttcper/ngx-toastr](https://github.com/scttcper/ngx-toastr) with minimal changes to run in Angular v22 projects.
+
 DEMO: https://ngx-toastr.vercel.app
 
 ## Features
@@ -36,13 +38,15 @@ Latest version available for each version of Angular
 | 15.2.2          | 14.x.           |
 | 16.2.0          | 15.x            |
 | 17.0.2          | 16.x            |
-| 18.x 19x        | >= 17.x < 23.x  |
-| current         | >= 20.x         |
+| 18.x 19x        | >= 17.x < 22.x  |
+| current         | >= 22.x         |
 
 ## Install
 
 ```bash
-npm install ngx-toastr --save
+npm install @relynn/ngx-toastr --save
+# or 
+yarn add @relynn/ngx-toastr
 ```
 
 ## Setup
