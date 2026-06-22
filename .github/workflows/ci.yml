@@ -24,7 +24,7 @@ jobs:
       - name: test
         run: npm run test:ci
       # https://github.com/codecov/codecov-action
-      - name: coverage
-        uses: codecov/codecov-action@v5
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+      # - name: coverage
+      #   uses: codecov/codecov-action@v5
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
